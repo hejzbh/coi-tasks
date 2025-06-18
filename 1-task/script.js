@@ -5,6 +5,7 @@ const learnMoreButton = document.querySelector(".section__learnMore__btn");
 const hiddenSectionParagraph = document.querySelector(
   ".section__paragraph__hidden"
 );
+const lazyImages = document.querySelectorAll('img[data-lazy="true"]');
 
 ////////////////////// OBSERVER - On scroll reveal animation //////////////////////
 const OBSERVER_OPTIONS = {
@@ -30,12 +31,12 @@ function revealSectionAnimation(entries /*observer*/) {
   }
 }
 
-const observer = new IntersectionObserver(
+const sectionObserver = new IntersectionObserver(
   revealSectionAnimation,
   OBSERVER_OPTIONS
 );
 
-observer.observe(mainSection);
+sectionObserver.observe(mainSection);
 
 ////////////////// TEXT ANIMATION //////////////////////
 function toggleSectionText() {
@@ -62,3 +63,29 @@ function toggleSectionText() {
 }
 
 learnMoreButton.addEventListener("click", toggleSectionText);
+
+////////////// BONUS LAZY LOADING ///////////////
+function loadLazyImage(entries, observer) {
+  const [entry] = entries;
+
+  if (!entry?.isIntersecting) return;
+
+  const img = entry.target;
+  const { dataset } = img;
+  console.log(dataset);
+
+  if (!dataset.originalsrc) {
+    observer.unobserve(img);
+    return;
+  }
+
+  // Replace compressed image with original image
+  img.src = dataset.originalsrc;
+}
+
+const lazyImageObserver = new IntersectionObserver(
+  loadLazyImage,
+  OBSERVER_OPTIONS
+);
+
+lazyImages.forEach((img) => lazyImageObserver.observe(img));
