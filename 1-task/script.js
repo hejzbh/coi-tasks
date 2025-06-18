@@ -72,7 +72,6 @@ function loadLazyImage(entries, observer) {
 
   const img = entry.target;
   const { dataset } = img;
-  console.log(dataset);
 
   if (!dataset.originalsrc) {
     observer.unobserve(img);
@@ -81,6 +80,8 @@ function loadLazyImage(entries, observer) {
 
   // Replace compressed image with original image
   img.src = dataset.originalsrc;
+
+  img.onload = () => img.classList.remove("blur");
 }
 
 const lazyImageObserver = new IntersectionObserver(

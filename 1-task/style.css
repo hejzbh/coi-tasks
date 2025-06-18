@@ -26,6 +26,10 @@ body {
   visibility: visible;
 }
 
+.blur {
+  filter: blur(15px);
+}
+
 /* ///////////////// SECTION LAYOUT //////////////////*/
 .section {
   transition: 0.3s ease-in-out all;
