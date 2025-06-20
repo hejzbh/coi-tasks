@@ -1,0 +1,18 @@
+{
+  "name": "3-task",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "author": "Hazim Tulumovic @heyz",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "swiper": "^11.2.8"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}

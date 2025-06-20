@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+button {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+button:hover {
+  opacity: .7;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=3-task.156cfffa.css.map */

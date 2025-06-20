@@ -1,0 +1,23 @@
+.swiper__section {
+  padding: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.swiper__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.swiper__toggle-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}

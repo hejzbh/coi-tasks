@@ -1,0 +1,24 @@
+.swiper__section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.swiper__image {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.swiper__toggle-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=3-task.3a01df49.css.map */
