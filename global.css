@@ -15,4 +15,13 @@ html {
 
 button {
   cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+a {
+  text-decoration: none;
 }
