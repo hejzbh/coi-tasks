@@ -1,3 +1,5 @@
+"use strict";
+
 const container = document.querySelector(".recipies__list");
 
 fetch("./recipies.json")
