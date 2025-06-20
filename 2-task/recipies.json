@@ -1,0 +1,36 @@
+[
+  {
+    "thumbnail": "./assets/recipe-1.webp",
+    "title": "Sparkling Triple Citrus & Mint Mocktail",
+    "decorativeCornerImages": [
+      {
+        "src": "./assets/decoration-2.webp",
+        "position": "top-left"
+      }
+    ]
+  },
+  {
+    "thumbnail": "./assets/recipe-2.webp",
+    "title": "Sparkling Triple Citrus & Mint Mocktail",
+    "decorativeCornerImages": [
+      {
+        "src": "./assets/decoration-3.webp",
+        "position": "top-right"
+      },
+      {
+        "src": "./assets/decoration-4.webp",
+        "position": "bottom-left"
+      }
+    ]
+  },
+  {
+    "thumbnail": "./assets/recipe-3.webp",
+    "title": "Sparkling Triple Citrus & Mint Mocktail",
+    "decorativeCornerImages": [
+      {
+        "src": "./assets/decoration-1.webp",
+        "position": "bottom-right"
+      }
+    ]
+  }
+]
